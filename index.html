@@ -11,7 +11,7 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;700&family=Satisfy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Satisfy&display=swap" rel="stylesheet">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <!-- Bootstrap Icons -->
@@ -24,6 +24,64 @@
     <script src="js/script.js" defer></script>
 </head>
 <body>
-
+    <!-- Header -->
+    <header>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg py-4 px-2 primary-bg-color" id="navbar">
+            <div class="container">
+                <a class="navbar-brand" id="navbar-txt-logo" href="#">
+                    <img class="d-inline-block" id="navbar-img-logo" src="/img/logo.png" alt="Guitar store logo">
+                    Guitar Store
+                </a>
+                <div id="navbar-items">
+                    <div></div>
+                    <form class="d-flex" id="search-form">
+                        <i class="bi bi-search primary-color"></i>
+                        <input class="form-control me-2" type="search" 
+                        placeholder="Enter your search" aria-label="Search">
+                        <button class="btn" type="submit">Search</button>
+                    </form>
+                    <ul class="navbar-nav mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="bi bi-person dark-color"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="bi bi-heart dark-color"></i></a>
+                            <span>3</span>
+                        </li>
+                        <li class="nav-item" id="cart-item">
+                            <a class="nav-link" href="#"><i class="bi bi-cart dark-color"></i><b>$ 850.90</b></a>
+                            <span>2</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Bottom Navbar -->
+        <nav class="navbar navbar-expand-lg p-2" id="bottom-navbar-container">
+            <div class="container">
+                <button class="navbar-toggler light-color" type="button" data-bs-toggle="collapse" data-bs-target="#bottom-navbar" aria-controls="bottom-navbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="bi bi-list"></i>
+                </button>
+                <ul class="navbar-nav mb-2 mb-lg-0 collapse navbar-collapse" id="bottom-navbar">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Guitars</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Basses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Amplifiers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Accessories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Blog</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
 </body>
 </html>

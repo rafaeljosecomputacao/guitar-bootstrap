@@ -1,0 +1,246 @@
+/* Colors */
+:root {
+    --primary-bg-color: #F5F5F5;
+    --secondary-bg-color: #151515;
+    --primary-txt-color: #151515;
+    --secondary-txt-color: #F5F5F5;
+    --primary-placeholder-color: #292929;
+    --secondary-placeholder-color: #8F8F8F;
+    --primary-color: #ec4e20;
+    --light-color: #F5F5F5;
+    --dark-color: #151515;
+}
+
+/* General */
+* {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+body {
+    background-color: var(--primary-bg-color);
+    color: var(--primary-txt-color);
+}
+
+/* Utilities */
+.primary-bg-color {
+    background-color: var(--primary-bg-color);
+}
+
+.secondary-bg-color {
+    background-color: var(--secondary-bg-color);
+}
+
+.primary-color {
+    color: var(--primary-color);
+}
+
+.light-color {
+    color: var(--light-color);
+}
+
+.dark-color {
+    color: var(--dark-color);
+}
+
+/* Navbar */
+#navbar .navbar-nav {
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+#navbar .navbar-nav li {
+    margin-left: 1.2em;
+}
+
+#navbar li {
+    position: relative;
+}
+
+#navbar i {
+    font-size: 25px;
+}
+
+#navbar button {
+    color: var(--secondary-txt-color);
+    background-color: var(--primary-color);
+    transition: .5s;
+}
+
+#navbar button:hover {
+    color: var(--secondary-txt-color);
+    background-color: var(--dark-color);
+}
+
+#navbar span {
+    position: absolute;
+    top: -8px;
+    right: -20px;
+    width: 21px;
+    height: 21px;
+    border-radius: 50%;
+    color: var(--secondary-txt-color);
+    background-color: var(--primary-color);
+    text-align: center;
+}
+
+#cart-item span {
+    left: 20px;
+}
+
+#cart-item b {
+    color: var(--primary-txt-color);
+    font-weight: 700;
+    font-size: 1.2em;
+    margin-left: 1em;
+}
+
+.navbar-brand {
+    width: 100%;
+    text-align: center;
+    margin-right: 0;
+}
+
+#navbar-txt-logo {
+    font-family: 'Satisfy', cursive;
+    font-weight: 400;
+    font-size: 2em;
+    color: var(--primary-txt-color);
+}
+
+#navbar-img-logo {
+    width: 48px;
+    height: 48px;
+}
+
+#navbar-items {
+    justify-content: space-between;
+}
+
+#search-form,
+#news-form {
+    width: 100%;
+    margin: 2em 0;
+    border: 2px solid var(--primary-color);
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+#search-form i,
+#news-form i {
+    margin-top: 3px;
+}
+
+#search-form input,
+#news-form input {
+    background-color: transparent;
+    border: none;
+    color: var(--primary-placeholder-color);
+    font-weight: 400;
+    font-size: 1em;
+}
+
+#search-form input:focus,
+#news-form input:focus {
+    box-shadow: none;
+}
+
+#search-form input::placeholder,
+#news-form input::placeholder {
+    color: var(--secondary-placeholder-color);
+    font-weight: 400;
+    font-size: 1em;
+}
+
+/* Bottom Navbar */
+#bottom-navbar-container {
+    background-color: var(--primary-color);
+}
+
+#bottom-navbar-container .container {
+    justify-content: flex-end;
+}
+
+#bottom-navbar-container a {
+    color: var(--secondary-txt-color);
+    transition: .5s;
+}
+
+#bottom-navbar-container a:hover {
+    color: var(--primary-txt-color);
+}
+
+.navbar-toggler {
+    margin-right: -0.5em;
+    font-size: 1.5em;
+    border: none;  
+}
+
+/* Responsive */
+@media(min-width: 425px) {
+    /* Navbar */
+    #navbar .navbar-nav {
+        margin-right: -0.8em;
+    }
+
+    #search-form {
+        margin: 2em 0.7em;
+    }
+
+    /* Bottom Navbar */
+    .navbar-toggler {
+        margin-right: 0;
+    }
+}
+
+@media(min-width: 768px) {
+    /* Navbar */
+    #navbar .navbar-nav {
+        margin-right: -5em;
+    }
+
+    .navbar-brand {
+        margin-bottom: 1em;
+    }
+
+    #navbar-items {
+        display: flex;
+        min-width: 80%;
+    }
+
+    #search-form,
+    #news-form {
+        width: 50%;
+        margin: 0;
+    }
+
+    /* Bottom Navbar */
+    .navbar-toggler {
+        margin-right: 2em;
+    }
+}
+
+@media(min-width: 1024px) {
+    /* Navbar */
+    #navbar .navbar-nav {
+        margin-right: 0;
+    }
+
+    .navbar-brand {
+        text-align: left;
+        margin-bottom: 0;
+    }
+
+    #navbar span {
+        right: -15px;
+    }
+    
+    #cart-item span {
+        left: 30px;
+    }
+
+    /* Bottom Navbar */
+    #bottom-navbar li {
+        margin-right: 2em;
+    }
+}
