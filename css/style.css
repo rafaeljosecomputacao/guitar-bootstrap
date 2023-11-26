@@ -223,6 +223,46 @@ body {
 
 
 
+/* Gallery Section */
+#gallery .image-container {
+    background-size: cover;
+    background-position: center;
+    height: 225px;
+    cursor: pointer;
+    transition: .5s;
+    border: 2px solid var(--dark-color);
+}
+  
+#gallery .image-container:hover {
+    border-color: var(--primary-color);
+}
+  
+#gallery-1 {
+    background-image: url('../img/gallery-1.jpg');
+}
+  
+#gallery-2 {
+    background-image: url('../img/gallery-2.jpg');
+}
+  
+#gallery-3 {
+    background-image: url('../img/gallery-3.jpg');
+}
+  
+#gallery-4 {
+    background-image: url('../img/gallery-4.jpg');
+}
+  
+#gallery-5 {
+    background-image: url('../img/gallery-5.jpg');
+}
+  
+#gallery-6 {
+    background-image: url('../img/gallery-6.jpg');
+}
+
+
+
 /* Responsive */
 @media(min-width: 425px) {
     /* Navbar */
