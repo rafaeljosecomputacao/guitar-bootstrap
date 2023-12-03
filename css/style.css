@@ -298,43 +298,52 @@ body {
     color: var(--light-color);
 }
 */
+
+
+
 /* Bottom Banner Section */
 #bottom-banner {
-    background-color: var(--secondary-bg-color);
-    padding: 4em;
-    margin-bottom: 4em;
+    background-color: var(--light-color);
+    padding: 4em 1em;
+    margin: 0;
     text-align: center;
 }
 
 #bottom-banner .offer-subtitle,
-#bottom-banner h3 {
+#bottom-banner h4 {
     font-weight: 700;
 }
 
-#bottom-banner h3 {
-    font-size: 1.6em;
+#bottom-banner h4 {
     margin: 1em 0;
 }
 
-#bottom-banner .btn {
-    background-color: var(--primary-color);
-    color: var(--secondary-txt-color);
-    border: 1px solid var(--primary-color);
-    padding: 0.7em 0;
-    margin: 2em 0;
-    width: 100%;
-    transition: .5s;   
+#bottom-banner .offer-description {
+    color: var(--secondary-bg-color);
 }
 
-#bottom-banner .btn:hover {
-    background-color: var(--secondary-color);
-    border-color: var(--secondary-color);
+#bottom-banner a {
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 5px;
+    margin-top: 1em;
+    width: 100%;
+    transition: .5s;  
+    cursor: pointer; 
+}
+
+#bottom-banner a:hover {
+    color: var(--light-color);
+    background-color: var(--dark-color); 
 }
 
 #bottom-banner img {
-    max-width: 200px;
-    margin-top: 1.2em;
+    max-width: 100%;
+    margin-top: 2em;
+    border-radius: 5px;
 }
+
+
 
 /* New Products Section */
 #new-products {
@@ -421,13 +430,6 @@ body {
     .navbar-toggler {
         margin-right: 0;
     }
-
-
-
-    /* Bottom Banner Section */
-    #bottom-banner h3 {
-        font-size: 1.8em;
-    }
 }
 
 @media(min-width: 768px) {
@@ -458,25 +460,30 @@ body {
 
 
 
-    
-
-
-
-    /* Best Sellers Section */
-    
-
     /* Bottom Banner Section */
-    #bottom-banner h3 {
-        font-size: 3em;
+    #bottom-banner {
+        padding: 4em 2em;
     }
 
-    #bottom-banner .btn {
+    #bottom-banner .row {
+        display: flex;
+        align-items: center;
+    }
+
+    #bottom-banner h4 {
+        font-size: 2em;
+    }
+
+    #bottom-banner a {
         width: 50%; 
     }
 
     #bottom-banner img {
+        max-width: 75%;
         margin-top: 0;
     }
+
+
 
     /* New Products Section */
     #new-products h2 {
@@ -515,10 +522,8 @@ body {
         margin-bottom: 0;
     }
 
-
-
     /* Bottom Banner Section */
-    #bottom-banner .btn {
-        width: 40%; 
+    #bottom-banner img {
+        max-width: 60%;
     }
 }
