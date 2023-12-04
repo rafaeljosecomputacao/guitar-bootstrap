@@ -1,11 +1,11 @@
 /* Colors */
 :root {
-    --primary-color: #DA4A54;
-    --secondary-color: #FFBB16;
+    --primary-color: #E01A4F;
+    --secondary-color: #707070;
     --light-color: #F5F5F5;
     --dark-color: #151515;
     --primary-bg-color: #ECE7EE;
-    --secondary-bg-color: #707070; 
+    --secondary-bg-color: #1F1F1F; 
 }
 
 /* General */
@@ -189,6 +189,37 @@ body {
 
 
 
+/* Main */
+#main-banner {
+    background-color: var(--primary-bg-color);
+    margin-top: 1em;
+}
+
+#main-container {
+    background-image: url(../img/main-banner.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 5px;
+    padding: 1em;
+}
+
+#main-title {
+    font-size: 20px;
+    font-weight: 800;
+    margin-bottom: 8px;
+}
+
+#main-description { 
+    font-weight: 700; 
+    margin-bottom: 0;
+}
+
 /* Category Section */
 #category-section {
     margin: 2em auto;
@@ -212,7 +243,6 @@ body {
 }
 
 #category-section .card-text {
-    color: var(--secondary-bg-color);
     margin: 1em 0;
 }
 
@@ -318,10 +348,6 @@ body {
     margin: 1em 0;
 }
 
-#bottom-banner .offer-description {
-    color: var(--secondary-bg-color);
-}
-
 #bottom-banner a {
     background-color: var(--primary-color);
     border: none;
@@ -417,12 +443,12 @@ body {
 
 /* Scrollbar */
 ::-webkit-scrollbar {
-    width: 10px; 
+    width: 8px; 
     background-color: var(--primary-bg-color);
 }
 
 ::-webkit-scrollbar-thumb {
-    border-radius: 5px;
+    border-radius: 4px;
     background-color: var(--primary-color);   
 }
 
@@ -470,6 +496,16 @@ body {
     }
 
 
+
+    /* Main */
+    #main-container {
+        height: 400px;
+    }
+
+    #main-title {
+        font-size: 25px;
+        margin-bottom: 16px;
+    }
 
     /* Bottom Banner Section */
     #bottom-banner {
@@ -527,7 +563,21 @@ body {
     }
 
 
-    
+
+    /* Main */
+    #main-container {
+        height: 500px;
+    }
+
+    #main-title {
+        font-size: 30px;
+        margin-bottom: 32px;
+    }
+
+    #main-description {
+        font-size: 20px;
+    }
+
     /* Category Section */
     #category-section .card {
         margin-bottom: 0;
