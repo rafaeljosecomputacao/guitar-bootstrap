@@ -128,8 +128,7 @@ body {
     justify-content: space-between;
 }
 
-#search-form,
-#news-form {
+#search-form {
     width: 100%;
     margin: 2em 0;
     border: 2px solid var(--primary-color);
@@ -137,13 +136,11 @@ body {
     padding: 5px 10px;
 }
 
-#search-form i,
-#news-form i {
+#search-form i {
     margin-top: 3px;
 }
 
-#search-form input,
-#news-form input {
+#search-form input {
     background-color: transparent;
     border: none;
     color: var(--primary-placeholder-color);
@@ -151,13 +148,11 @@ body {
     font-size: 1em;
 }
 
-#search-form input:focus,
-#news-form input:focus {
+#search-form input:focus {
     box-shadow: none;
 }
 
-#search-form input::placeholder,
-#news-form input::placeholder {
+#search-form input::placeholder {
     color: var(--secondary-placeholder-color);
     font-weight: 400;
     font-size: 1em;
@@ -411,13 +406,17 @@ body {
 }
 
 /* Gallery Section */
+#gallery-section {
+    margin-top: -1em;
+}
+
 #gallery-section .gallery-container {
     background-size: cover;
     background-position: center;
     height: 225px;
     cursor: pointer;
     transition: .5s;
-    border: 2px solid var(--dark-color);
+    border: 2px solid var(--secondary-bg-color);
 }
   
 #gallery-section .gallery-container:hover {
@@ -446,6 +445,127 @@ body {
   
 #gallery-image-6 {
     background-image: url('../img/gallery-6.jpg');
+}
+
+/* Footer */
+#footer-links-container {
+    background-color: var(--light-color);
+}
+  
+#footer .footer-column {
+    padding: 2em;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#footer-links-container ul {
+    margin-bottom: 0;
+}
+  
+#footer-links-container li {
+    text-align: center;
+}
+  
+#footer-links-container li a {
+    text-decoration: none;
+}
+  
+#footer-links-container li a:hover {
+    color: var(--primary-color);
+}
+  
+#footer-center .store-phone {
+    color: var(--dark-color);
+    font-size: 20px;
+    margin-bottom: 0;
+}
+  
+#newsletter-container {
+    background-color: var(--secondary-bg-color);
+    text-align: center;
+    padding: 2em 1.5em;
+}
+
+#newsletter-container h6 {
+    text-align: center;
+    margin-bottom: 8px;
+    padding: 0;
+}
+  
+#news-form {
+    margin: 8px auto;
+    border-radius: 5px;
+    padding: 4px 8px;
+    background-color: var(--light-color);
+}
+  
+#news-form i {
+    font-size: 1.5em;
+    margin-top: 3px;
+}
+  
+#news-form input {
+    background-color: transparent;
+    border: none;
+    color: var(--secondary-color);
+    font-weight: 300;
+    font-size: 1em;
+}
+
+#news-form input:focus {
+    box-shadow: none;
+}
+
+#news-form input::placeholder {
+    color: var(--secondary-color);
+    font-weight: 300;
+    font-size: 1em;
+}
+
+#news-form .btn {
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    border: none;
+    border-radius: 5px;
+    transition: .5s;
+}
+
+#news-form .btn:hover {
+    background-color: var(--dark-color);
+    color: var(--light-color);
+}
+
+#social-container {
+    margin: 8px auto 0;
+}
+  
+#social-container i {
+    font-size: 1.5em;
+    margin: 0 0.5em;
+    cursor: pointer;
+    transition: .5s;
+}
+  
+#social-container i:hover {
+    color: var(--primary-color);
+}
+  
+#copy-container {
+    background-color: var(--primary-color);
+    text-align: center;
+    padding: 3em;
+}
+
+#copy-container p {
+    color: var(--light-color);
+    font-weight: 300;
+    margin-bottom: 0;
+}
+
+#copy-container span {
+    font-weight: 300;
 }
 
 /* Scrollbar */
@@ -491,8 +611,7 @@ body {
         min-width: 80%;
     }
 
-    #search-form,
-    #news-form {
+    #search-form {
         width: 50%;
         margin: 0;
     }
@@ -545,6 +664,21 @@ body {
 
     #new-products-section .col-md-4 {
         padding: 0 4px;
+    }
+
+    /* Gallery Section */
+    #gallery-section {
+        margin-top: 2em;
+    }
+
+    /* Footer */
+    #footer-center {
+        border-left: 1px solid var(--secondary-bg-color);
+        border-right: 1px solid var(--secondary-bg-color);
+    }
+
+    #news-form {
+        width: 80%;
     }
 }
 
@@ -606,5 +740,10 @@ body {
     /* New Products Section */
     #new-products-section .col-md-4 {
         padding: 0 8px;
+    }
+
+    /* Footer */
+    #news-form {
+        width: 60%;
     }
 }
