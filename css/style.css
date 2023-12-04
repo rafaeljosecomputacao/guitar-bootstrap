@@ -2,7 +2,7 @@
 :root {
     --primary-color: #E01A4F;
     --secondary-color: #707070;
-    --light-color: #F5F5F5;
+    --light-color: #FFFFFF;
     --dark-color: #151515;
     --primary-bg-color: #ECE7EE;
     --secondary-bg-color: #1F1F1F; 
@@ -226,6 +226,7 @@ body {
 }
 
 #category-section .card {
+    background-color: var(--light-color);
     text-align: center;
     margin-top: 0;
     margin-bottom: 1em;
@@ -260,76 +261,53 @@ body {
     background-color: var(--dark-color);
 }
 
-
-  
 /* Best Sellers Section */
-#best-sellers {
-    padding: 4em 0;
+#best-sellers-section {
+    margin: -1em auto 2em;
 }
   
-#best-sellers .row {
-    margin: 0;
-}
-  
-#best-sellers .col-md-3 {
-    padding: 0;
-}
-  
-
- /* 
-.card {
+#best-sellers-section .card {
+    background-color: var(--light-color);
     text-align: center;
-    border-radius: 0;
-    cursor: pointer;
-    transition: .5s;
-    border: 1px solid var(--primary-border-color);
-}
-
-.card:hover {
-    border-color: var(--secondary-border-color);
-}
-  
-.card img {
-    width: 100px;
-    height: 200px;
-    margin: 1em auto;
-}
-  
-.card .card-category {
-    font-size: 1em;
-}
-
-.card .card-title {
-    font-size: 1.4em;
-    font-weight: 700;
-}
-  
-.card .card-text {
-    margin: 1em 0;
-    font-weight: 700;
-}
-  
-#card-btn {
-    color: var(--secondary-txt-color);
-    background-color: var(--primary-color);   
-    border: 1px solid var(--primary-color);
+    border: none;
     border-radius: 5px;
-    transition: .5s;
+    margin-bottom: 1em;
+    max-height: 520px;
+}
+
+#best-sellers-section .card img {
+    width: 75px;
+    height: 230px;
+    margin: 4px auto 0;
+}
+
+#best-sellers-section .card-category {
+    font-weight: 300;
+    margin-bottom: 0;
+}
+
+#best-sellers-section .card-title {
+    font-weight: 700;
+    margin: 8px 0 16px;
+}
+
+#best-sellers-section .card-text {
+    margin-bottom: 16px;
+}
+
+#best-sellers-section a {
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 5px;
     width: 100%;
-}
-  
-#card-btn:hover {
-    color: var(--secondary-txt-color);
-    background-color: var(--secondary-color);  
-    border-color: var(--secondary-color);
+    transition: .5s;
+    cursor: pointer;
 }
 
-#card-btn i {
+#best-sellers-section a:hover {
     color: var(--light-color);
+    background-color: var(--dark-color);
 }
-*/
-
-
 
 /* Bottom Banner Section */
 #bottom-banner {
@@ -581,6 +559,11 @@ body {
     /* Category Section */
     #category-section .card {
         margin-bottom: 0;
+    }
+
+    /* Best Sellers Section */
+    #best-sellers-section {
+        margin-top: 2em;
     }
 
     /* Bottom Banner Section */
