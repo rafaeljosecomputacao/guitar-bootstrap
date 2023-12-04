@@ -347,11 +347,9 @@ body {
     border-radius: 5px;
 }
 
-
-
 /* New Products Section */
-#new-products {
-    margin-bottom: 4em;
+#new-products-section {
+    margin: 2em auto;
 }
   
 #new-products-banner {
@@ -359,27 +357,58 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: var(--secondary-bg-color);
-}
-  
-#new-products-banner h3 {
-    font-weight: 700; 
-    font-size: 2em;
     text-align: center;
-    margin: 0.1em 0 0.9em;
+    border: none;
+    border-radius: 5px;
+    max-height: 600px;
 }
   
-#new-products .col-md-4 {
-    padding: 0;
+#new-products-banner h4 {
+    margin: 1em 0;
 }
   
-#new-products .card img {
-    width: 90px;
-    height: 180px;  
-    margin: 1em auto;
+#new-products-section .card {
+    background-color: var(--light-color);
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 1em;
+    max-height: 520px;
 }
 
+#new-products-section .card img {
+    width: 75px;
+    height: 230px;
+    margin: 4px auto 0;
+}
 
+#new-products-section .card-category {
+    font-weight: 300;
+    margin-bottom: 0;
+}
+
+#new-products-section .card-title {
+    font-weight: 700;
+    margin: 8px 0 16px;
+}
+
+#new-products-section .card-text {
+    margin-bottom: 16px;
+}
+
+#new-products-section a {
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    transition: .5s;
+    cursor: pointer;
+}
+
+#new-products-section a:hover {
+    color: var(--light-color);
+    background-color: var(--dark-color);
+}
 
 /* Gallery Section */
 #gallery-section .gallery-container {
@@ -508,11 +537,14 @@ body {
         margin-top: 0;
     }
 
-
-
     /* New Products Section */
-    #new-products h2 {
-        margin-left: -0.4em;
+    #new-products-section .card {
+        max-height: 600px;
+        height: 100%;
+    }
+
+    #new-products-section .col-md-4 {
+        padding: 0 4px;
     }
 }
 
@@ -569,5 +601,10 @@ body {
     /* Bottom Banner Section */
     #bottom-banner img {
         max-width: 60%;
+    }
+
+    /* New Products Section */
+    #new-products-section .col-md-4 {
+        padding: 0 8px;
     }
 }
