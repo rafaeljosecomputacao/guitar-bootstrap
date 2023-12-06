@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Website of an instrument store">
-    <meta name="keywords" content="guitar, bass, amplifier, acoustic guitar, accessories, store">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Website of an instrument store">
+    <meta name="keywords" content="guitar, bass, amplifier, acoustic guitar, accessories, store"> 
     <title>Guitar Store</title>
     <!-- Favicon -->
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
@@ -27,65 +27,67 @@
     <!-- Header -->
     <header>
         <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg py-4 px-2 primary-bg-color" id="navbar">
+        <nav class="navbar navbar-expand-lg" id="navbar">
             <div class="container">
-                <a class="navbar-brand" id="navbar-txt-logo" href="#">
-                    <img class="d-inline-block" id="navbar-img-logo" src="/img/logo.png" alt="Guitar store logo">
-                    Guitar Store
-                </a>
+                <a href="#" class="navbar-brand text-uppercase light-color">Guitar Store</a>
                 <div id="navbar-items">
                     <div></div>
                     <form class="d-flex" id="search-form">
                         <i class="bi bi-search primary-color"></i>
-                        <input class="form-control me-2" type="search" 
-                        placeholder="Enter your search" aria-label="Search">
-                        <button class="btn" type="submit">Search</button>
+                        <input class="form-control" placeholder="Enter your search">
+                        <button class="btn text-uppercase" type="submit">Search</button>
                     </form>
                     <ul class="navbar-nav mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link" href="#"><i class="bi bi-person dark-color"></i></a>
+                            <a href="#" class="nav-link">
+                                <i class="bi bi-person light-color"></i>
+                            </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#"><i class="bi bi-heart dark-color"></i></a>
-                            <span>3</span>
+                            <a href="#" class="nav-link">
+                                <i class="bi bi-heart light-color"></i>
+                            </a>
                         </li>
-                        <li class="nav-item" id="cart-item">
-                            <a class="nav-link" href="#"><i class="bi bi-cart dark-color"></i><b>$ 850.90</b></a>
-                            <span>2</span>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="bi bi-cart light-color"></i>
+                                <b class="fw-bold light-color">$ 850.90</b>
+                            </a>
+                            <span class="text-bg-success light-color">2</span>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
         <!-- Bottom Navbar -->
-        <nav class="navbar navbar-expand-lg p-2" id="bottom-navbar-container">
+        <nav class="navbar navbar-expand-lg p-2 secondary-bg-color" id="bottom-navbar-container">
             <div class="container">
                 <button class="navbar-toggler light-color" type="button" data-bs-toggle="collapse" data-bs-target="#bottom-navbar" aria-controls="bottom-navbar" aria-expanded="false" aria-label="Toggle navigation">
                     <i class="bi bi-list"></i>
                 </button>
                 <ul class="navbar-nav mb-2 mb-lg-0 collapse navbar-collapse" id="bottom-navbar">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Guitars</a>
+                        <a href="#" class="nav-link" active>Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Basses</a>
+                        <a href="#" class="nav-link">Guitar</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Amplifiers</a>
+                        <a href="#" class="nav-link">Bass</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Accessories</a>
+                        <a href="#" class="nav-link">Amplifier</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Blog</a>
+                        <a href="#" class="nav-link">Accessories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Blog</a>
                     </li>
                 </ul>
             </div>
         </nav>
     </header>
-    
-    
-
     <!-- Main -->
     <main class="container" id="main-banner">
         <div class="row d-flex justify-content-around">
