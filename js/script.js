@@ -1,4 +1,4 @@
-/* Current year for footer */
+// Current year for footer
 
 var year = new Date();
-document.querySelector('.year').innerHTML = year.getFullYear();
+document.getElementById('year').innerHTML = year.getFullYear();

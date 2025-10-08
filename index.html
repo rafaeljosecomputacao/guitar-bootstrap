@@ -1,74 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Website of an instrument store">
-    <meta name="keywords" content="guitar, bass, amplifier, acoustic guitar, accessories, store"> 
+    <meta name="keywords" content="guitar, bass, amplifier, accessories">
     <title>Guitar Store</title>
     <!-- Favicon -->
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;900&display=swap" rel="stylesheet">
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
-    <!-- Bootstrap Javascript -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous" defer></script>
-    <!-- Javascript -->
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"
+        defer></script>
+    <!-- JavaScript -->
     <script src="js/script.js" defer></script>
 </head>
+
 <body>
+
     <!-- Header -->
     <header>
         <!-- Navbar -->
         <nav class="navbar navbar-expand-lg" id="navbar">
             <div class="container">
-                <a href="#" class="navbar-brand text-uppercase light-color">Guitar Store</a>
-                <div id="navbar-items">
-                    <div></div>
-                    <form class="d-flex" id="search-form">
-                        <i class="bi bi-search primary-color"></i>
-                        <input class="form-control" placeholder="Enter your search">
-                        <button class="btn text-uppercase" type="submit">Search</button>
-                    </form>
-                    <ul class="navbar-nav mb-lg-0">
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">
-                                <i class="bi bi-person light-color"></i>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">
-                                <i class="bi bi-heart light-color"></i>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">
-                                <i class="bi bi-cart light-color"></i>
-                                <b class="fw-bold light-color">$ 850.90</b>
-                            </a>
-                            <span class="text-bg-success light-color">2</span>
-                        </li>
-                    </ul>
-                </div>
+                <a href="#" class="navbar-brand text-uppercase light-color">Guitar <span
+                        class="dark-color">Store</span></a>
+                <form class="d-flex" id="search-form">
+                    <i class="bi bi-search secondary-color"></i>
+                    <input class="form-control" placeholder="Enter your search">
+                </form>
+                <ul class="navbar-nav">
+                    <li class="nav-item mx-0">
+                        <a href="#" class="nav-link">
+                            <i class="bi bi-person light-color"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <i class="bi bi-heart light-color"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <i class="bi bi-cart light-color"></i>
+                            <b class="light-color">$ 850.90</b>
+                        </a>
+                    </li>
+                </ul>
             </div>
         </nav>
         <!-- Bottom Navbar -->
-        <nav class="navbar navbar-expand-lg p-2 secondary-bg-color" id="bottom-navbar-container">
+        <nav class="navbar navbar-expand-lg p-2 primary-bg-color" id="bottom-navbar">
             <div class="container">
-                <button class="navbar-toggler light-color" type="button" data-bs-toggle="collapse" data-bs-target="#bottom-navbar" aria-controls="bottom-navbar" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler light-color" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#bottom-navbar-items" aria-controls="bottom-navbar-items" aria-expanded="false"
+                    aria-label="Toggle navigation">
                     <i class="bi bi-list"></i>
                 </button>
-                <ul class="navbar-nav mb-2 mb-lg-0 collapse navbar-collapse" id="bottom-navbar">
-                    <li class="nav-item">
-                        <a href="#" class="nav-link" active>Home</a>
-                    </li>
+                <ul class="navbar-nav collapse navbar-collapse" id="bottom-navbar-items">
                     <li class="nav-item">
                         <a href="#" class="nav-link">Guitar</a>
                     </li>
@@ -88,196 +89,154 @@
             </div>
         </nav>
     </header>
+
     <!-- Main -->
-    <main class="container" id="main-banner">
-        <div class="row d-flex justify-content-around">
-            <div class="col-12">
-                <div class="shadow" id="main-container">
-                    <h1 class="text-uppercase light-color" id="main-title">
-                        The best musical instruments for you
-                    </h1>
-                    <p class="light-color" id="main-description">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit
-                    </p> 
-                </div>
-            </div>
-        </div>        
+    <main class="container-fluid">
+        <p class="dark-color" id="main-offer">
+            <span class="fw-bold">Super Offer:</span> Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Quibusdam alias error inventore similique dolorem.
+        </p>
+        <div id="main-banner">
+            <h1 class="text-uppercase light-color" id="main-title">
+                We have the best instruments for you
+            </h1>
+            <p class="light-color" id="main-description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+        </div>
     </main>
+
     <!-- Category Section -->
     <section class="container" id="category-section">
         <h2 class="text-uppercase title primary-color">Categories</h2>
         <div class="row">
             <div class="col-12 col-md-4 col-lg-3">
-                <div class="card shadow">
+                <div class="card secondary-bg-color">
                     <img src="img/card-category-1.jpg" alt="Guitar" class="card-img-top">
                     <div class="card-body">
                         <h5 class="card-title text-uppercase primary-color">Guitar</h5>
-                        <p class="card-text secondary-color">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit
+                        <p class="card-text light-color">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         </p>
                         <a href="#" class="btn text-uppercase light-color">Learn More</a>
                     </div>
-                </div>             
+                </div>
             </div>
             <div class="col-12 col-md-4 col-lg-3">
-                <div class="card shadow">
+                <div class="card secondary-bg-color">
                     <img src="img/card-category-2.jpg" alt="Bass" class="card-img-top">
                     <div class="card-body">
                         <h5 class="card-title text-uppercase primary-color">Bass</h5>
-                        <p class="card-text secondary-color">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit
+                        <p class="card-text light-color">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         </p>
                         <a href="#" class="btn text-uppercase light-color">Learn More</a>
                     </div>
-                </div>             
+                </div>
             </div>
             <div class="col-12 col-md-4 col-lg-3">
-                <div class="card shadow">
+                <div class="card secondary-bg-color">
                     <img src="img/card-category-3.jpg" alt="Amplifier" class="card-img-top">
                     <div class="card-body">
                         <h5 class="card-title text-uppercase primary-color">Amplifier</h5>
-                        <p class="card-text secondary-color">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit
+                        <p class="card-text light-color">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         </p>
                         <a href="#" class="btn text-uppercase light-color">Learn More</a>
                     </div>
-                </div>             
+                </div>
             </div>
             <div class="col-12 col-md-4 col-lg-3">
-                <div class="card shadow">
+                <div class="card secondary-bg-color">
                     <img src="img/card-category-4.jpg" alt="Acoustic Guitar" class="card-img-top">
                     <div class="card-body">
                         <h5 class="card-title text-uppercase primary-color">Acoustic Guitar</h5>
-                        <p class="card-text secondary-color">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit
+                        <p class="card-text light-color">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         </p>
                         <a href="#" class="btn text-uppercase light-color">Learn More</a>
                     </div>
-                </div>             
+                </div>
             </div>
         </div>
     </section>
+
     <!-- Best Sellers Section -->
     <section class="container" id="best-sellers-section">
         <h2 class="text-uppercase title primary-color">Best Sellers</h2>
         <div class="row">
             <div class="col-12 col-md-4">
-                <div class="card shadow">
-                    <img src="img/card-best-sellers-1.jpg" class="card-img-top" alt="Guitar">
+                <div class="card secondary-bg-color">
                     <div class="card-body">
                         <p class="card-category text-uppercase secondary-color">Guitar</p>
                         <h5 class="card-title text-uppercase primary-color">Guitar Fender Master</h5>
-                        <p class="card-text secondary-color">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit
+                        <p class="card-text light-color">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         </p>
-                        <p class="card-text fw-bold dark-color">$ 1,750.00</p>
-                        <a href="#" class="btn text-uppercase light-color">Add to cart</a>
+                        <p class="card-text primary-color">$ 1,750.00</p>
+                        <a href="#" class="btn text-uppercase light-color">Learn More</a>
                     </div>
                 </div>
             </div>
             <div class="col-12 col-md-4">
-                <div class="card shadow">
-                    <img src="img/card-best-sellers-2.jpg" class="card-img-top" alt="Guitar">
+                <div class="card secondary-bg-color">
                     <div class="card-body">
                         <p class="card-category text-uppercase secondary-color">Guitar</p>
                         <h5 class="card-title text-uppercase primary-color">Guitar Fender Elite</h5>
-                        <p class="card-text secondary-color">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit
+                        <p class="card-text light-color">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         </p>
-                        <p class="card-text fw-bold dark-color">$ 2,500.00</p>
-                        <a href="#" class="btn text-uppercase light-color">Add to cart</a>
+                        <p class="card-text primary-color">$ 2,500.00</p>
+                        <a href="#" class="btn text-uppercase light-color">Learn More</a>
                     </div>
                 </div>
             </div>
             <div class="col-12 col-md-4">
-                <div class="card shadow">
-                    <img src="img/card-best-sellers-3.jpg" class="card-img-top" alt="Bass">
+                <div class="card secondary-bg-color">
                     <div class="card-body">
                         <p class="card-category text-uppercase secondary-color">Bass</p>
                         <h5 class="card-title text-uppercase primary-color">Bass Eagle Imperial</h5>
-                        <p class="card-text secondary-color">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit
+                        <p class="card-text light-color">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         </p>
-                        <p class="card-text fw-bold dark-color">$ 1,050.00</p>
-                        <a href="#" class="btn text-uppercase light-color">Add to cart</a>
+                        <p class="card-text primary-color">$ 1,050.00</p>
+                        <a href="#" class="btn text-uppercase light-color">Learn More</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
     <!-- Bottom Banner Section -->
-    <section class="container-fluid shadow" id="bottom-banner">
+    <section class="container-fluid" id="bottom-banner">
         <div class="row">
             <div class="col-12 col-md-8">
-                <p class="offer-subtitle dark-color">Up to 20% off for a limited time</p>
-                <h4 class="text-uppercase dark-color">Guitars</h4>
-                <p class="offer-description secondary-color">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                <h4 class="text-uppercase primary-color">Guitars</h4>
+                <p class="light-color">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam alias error
+                    inventore similique dolorem. Ullam nihil incidunt esse accusantium autem, quidem
+                    repellat alias deleniti quae animi at explicabo. Es at corporis et commodi
+                    consequuntur cum maxime.
                 </p>
-                <a href="#" class="btn text-uppercase light-color">Learn More</a>
+                <p class="light-color">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam alias error
+                    inventore similique dolorem. Ullam nihil incidunt esse accusantium autem, quidem
+                    repellat alias deleniti quae animi at explicabo. Es at corporis et commodi
+                    consequuntur cum maxime.
+                </p>
+                <p class="light-color">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam alias error
+                    inventore similique dolorem. Ullam nihil incidunt esse accusantium autem, quidem
+                    repellat alias deleniti quae animi at explicabo. Es at corporis et commodi
+                    consequuntur cum maxime.
+                </p>
             </div>
             <div class="col-12 col-md-4">
                 <img src="img/bottom-banner.jpg" alt="Guitar" class="img-fluid">
             </div>
         </div>
     </section>
-    <!-- New Products Section -->
-    <section class="container" id="new-products-section">
-        <h2 class="text-uppercase title primary-color">New Products</h2>
-        <div class="row">
-            <div class="col-12 col-md-3 d-none d-md-flex shadow secondary-bg-color" id="new-products-banner">
-                <p class="mb-0 text-uppercase secondary-color">Quality</p>
-                <h4 class="fw-bold text-uppercase primary-color">Lot of products</h4>
-                <p class="mb-0 text-uppercase light-color">Get best price</p>
-            </div>
-            <div class="col-12 col-md-9">
-                <div class="row">
-                    <div class="col-12 col-md-4">
-                        <div class="card shadow">
-                            <img src="img/card-new-products-1.jpg" class="card-img-top" alt="Guitar">
-                            <div class="card-body">
-                                <p class="card-category text-uppercase secondary-color">Guitar</p>
-                                <h5 class="card-title text-uppercase primary-color">Guitar Fender King</h5>
-                                <p class="card-text secondary-color">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit
-                                </p>
-                                <p class="card-text fw-bold dark-color">$ 2,350.00</p>
-                                <a href="#" class="btn text-uppercase light-color">Add to cart</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-4">
-                        <div class="card shadow">
-                            <img src="img/card-new-products-2.jpg" class="card-img-top" alt="Bass">
-                            <div class="card-body">
-                                <p class="card-category text-uppercase secondary-color">Bass</p>
-                                <h5 class="card-title text-uppercase primary-color">Bass Tagima Hunter</h5>
-                                <p class="card-text secondary-color">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit
-                                </p>
-                                <p class="card-text fw-bold dark-color">$ 1,200.00</p>
-                                <a href="#" class="btn text-uppercase light-color">Add to cart</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-4">
-                        <div class="card shadow">
-                            <img src="img/card-new-products-3.jpg" class="card-img-top" alt="Guitar">
-                            <div class="card-body">
-                                <p class="card-category text-uppercase secondary-color">Guitar</p>
-                                <h5 class="card-title text-uppercase primary-color">Guitar Fender Fury</h5>
-                                <p class="card-text secondary-color">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit
-                                </p>
-                                <p class="card-text fw-bold dark-color">$ 1,700.00</p>
-                                <a href="#" class="btn text-uppercase light-color">Add to cart</a>
-                            </div>
-                        </div>
-                    </div>              
-                </div>
-            </div>
-        </div>
-    </section>
+
     <!-- Gallery Section -->
     <section class="container-fluid" id="gallery-section">
         <h2 class="text-uppercase title primary-color">Gallery</h2>
@@ -290,42 +249,45 @@
             <div class="col-6 col-md-4 col-lg-2 gallery-container" id="gallery-image-6"></div>
         </div>
     </section>
+
     <!-- Footer -->
     <footer id="footer">
         <div class="container-fluid" id="footer-links-container">
             <div class="row">
                 <div class="col-12 col-md-4 footer-column">
-                    <h4 class="text-uppercase fw-bold dark-color">Pages</h4>
+                    <h5 class="text-uppercase dark-color">Pages</h5>
                     <ul class="list-unstyled">
                         <li class="mb-2"><a href="#" class="secondary-color">Home</a></li>
                         <li class="mb-2"><a href="#" class="secondary-color">Categories</a></li>
                         <li class="mb-2"><a href="#" class="secondary-color">Best Sellers</a></li>
-                        <li><a href="#" class="secondary-color">Contact</a></li>
+                        <li><a href="#" class="secondary-color">Gallery</a></li>
                     </ul>
                 </div>
                 <div class="col-12 col-md-4 footer-column" id="footer-center">
-                    <h4 class="text-uppercase fw-bold dark-color">Guitar Store</h4>
+                    <h5 class="text-uppercase dark-color">Guitar Store</h5>
                     <p class="secondary-color">Any questions? Call us</p>
-                    <p class="store-phone"><i class="bi bi-telephone pe-2 primary-color"></i>310 540 2530</p>
+                    <p class="m-0 dark-color">
+                        <i class="bi bi-telephone pe-2 primary-color"></i>310 540 2530
+                    </p>
                 </div>
                 <div class="col-12 col-md-4 footer-column">
-                    <h4 class="text-uppercase fw-bold dark-color">Information</h4>
+                    <h5 class="text-uppercase dark-color">Information</h5>
                     <ul class="list-unstyled">
                         <li class="mb-2"><a href="#" class="secondary-color">Privacy Policy</a></li>
-                        <li class="mb-2"><a href="#" class="secondary-color">Delivery Policy</a></li>
+                        <li class="mb-2"><a href="#" class="secondary-color">Terms of Use</a></li>
+                        <li class="mb-2"><a href="#" class="secondary-color">Shipping and Delivery</a></li>
                         <li><a href="#" class="secondary-color">Help Center</a></li>
                     </ul>
                 </div>
             </div>
         </div>
-        <div class="container-fluid" id="newsletter-container">
+        <div class="container-fluid primary-bg-color" id="newsletter-container">
             <div class="col-12">
                 <div class="row">
-                    <h6 class="text-uppercase secondary-color">Receive our newsletter</h6>
+                    <h6 class="text-uppercase primary-color">Receive our newsletter</h6>
                     <form class="d-flex" id="news-form">
-                        <i class="bi bi-envelope primary-color"></i>
+                        <i class="bi bi-envelope secondary-color"></i>
                         <input class="form-control" placeholder="Enter your email">
-                        <button class="btn text-uppercase" type="submit">Send</button>
                     </form>
                 </div>
             </div>
@@ -337,10 +299,12 @@
             </div>
         </div>
         <div class="container-fluid" id="copy-container">
-            <p>
-                &copy; Copyright <span class="year"></span> - Guitar Store
+            <p class="light-color">
+                &copy; Copyright <span id="year"></span> - Guitar Store
             </p>
         </div>
     </footer>
+
 </body>
+
 </html>
